@@ -1,0 +1,5 @@
+/* Importar el tema predefinido de Angular Material */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Importar Flexbox Grid */
+@import 'flexboxgrid/dist/flexboxgrid.min.css';

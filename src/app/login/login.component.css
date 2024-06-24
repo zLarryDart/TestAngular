@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.login-form {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-form .logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-group.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group.remember-me input {
+  margin-right: 10px;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  background-color: #a3e635;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-login:hover {
+  background-color: #84cc16;
+}
+
+.form-links {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.form-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+.form-links .register-link {
+  display: block;
+  margin-top: 5px;
+}
+
+.form-links .register-link span {
+  font-weight: bold;
+}
+
+.social-login {
+  margin-top: 30px;
+}
+
+.social-login p {
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-social {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn-social:last-child {
+  margin-right: 0;
+}
+
+.btn-social.google {
+  background-color: #db4437;
+}
+
+.btn-social.facebook {
+  background-color: #3b5998;
+}
+
+.btn-social.apple {
+  background-color: #333;
+}
+
+.btn-social.google:hover {
+  background-color: #c23321;
+}
+
+.btn-social.facebook:hover {
+  background-color: #2d4373;
+}
+
+.btn-social.apple:hover {
+  background-color: #1a1a1a;
+}

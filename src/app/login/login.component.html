@@ -1,0 +1,37 @@
+<div class="login-wrapper">
+  <div class="login-image">
+    <img src="assets/loginB.png" alt="Login Image">
+  </div>
+  <div class="login-form">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h2>Inicia sesión</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Email o nombre de usuario</label>
+        <input type="text" id="username" name="username" #username required placeholder="Email o nombre de usuario">
+      </div>
+      <div class="form-group password-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" #password required placeholder="Contraseña" (input)="onPasswordInput()">
+        <span *ngIf="passwordHasValue" class="toggle-password" (click)="togglePasswordVisibility()">👁️</span>
+      </div>
+      <div class="form-group remember-me">
+        <input type="checkbox" id="rememberMe" name="rememberMe" #rememberMe>
+        <label for="rememberMe">Recordarme</label>
+      </div>
+      <button type="submit" class="btn-login">INICIAR SESIÓN</button>
+    </form>
+    <div class="form-links">
+      <a href="#">¿Olvidaste tu contraseña?</a>
+      <a href="#" class="register-link">No tienes una cuenta? <span>REGISTRARSE</span></a>
+    </div>
+    <div class="social-login">
+      <p>Inicia sesión con tus redes sociales</p>
+      <div class="social-buttons">
+        <button class="btn-social google">Google</button>
+        <button class="btn-social facebook">Facebook</button>
+        <button class="btn-social apple">Apple</button>
+      </div>
+    </div>
+  </div>
+</div>
